@@ -46,8 +46,8 @@
   services.xserver.enable = true;
 
   # Enable the GNOME Desktop Environment.
-  services.xserver.displayManager.gdm.enable = true;
-  services.xserver.desktopManager.gnome.enable = true;
+  services.displayManager.gdm.enable = true;
+  services.desktopManager.gnome.enable = true;
 
   # Configure keymap in X11
   services.xserver.xkb = {
@@ -103,6 +103,7 @@
     git
     neovim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
   #  wget
+    nixfmt
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
